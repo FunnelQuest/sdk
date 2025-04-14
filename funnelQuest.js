@@ -12,7 +12,7 @@
 
   // Configuration
   const API_URL = 'https://api.funnelquest.com/track'; // Assumed API endpoint
-  const BATCH_INTERVAL = 5000; // Send batch every 5 seconds
+  const BATCH_INTERVAL = 15000; // Send batch every 15 seconds
   const MAX_BATCH_SIZE = 10; // Send batch if queue reaches 10 events
 
   /**
