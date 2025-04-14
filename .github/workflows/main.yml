@@ -26,8 +26,8 @@ jobs:
 
       - name: Commit minified file
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "erayalakese@users.noreply.github.com"
+          git config --local user.name "Eray Alakese"
           git add funnelQuest.min.js
           if ! git diff --staged --quiet; then
             git commit -m "Update minified funnelQuest.js [skip ci]"
