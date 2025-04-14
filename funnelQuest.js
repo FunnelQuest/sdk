@@ -40,7 +40,7 @@
     traceId = getCookie('fq_trace_id');
     if (!traceId) {
       traceId = generateTraceId();
-      setCookie('fq_trace_id', traceId, { expires: 365, secure: true, sameSite: 'Lax' });
+      setCookie('fq_trace_id', traceId, { expires: 365, secure: true, sameSite: 'Strict' });
     } else {
       traceId = sanitizeString(traceId); // Sanitize retrieved traceId
     }
