@@ -230,7 +230,8 @@
    */
   function sanitizeString(str) {
     if (typeof str !== 'string') return '';
-    return str.trim().replace(/[^\x20-\x7E]/g, ''); // Remove non-printable characters
+    // Remove control characters, preserve printable Unicode characters
+    return str.replace(/[\x00-\x1F\x7F]/g, '').trim();
   }
 
   // Expose public API
